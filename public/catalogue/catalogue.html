@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="catalogue.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Edutech Catalogue</title>
+  </head>
+  <body>
+    <!-- Section Detals Header dan Nav -->
+    <section class="details-section">
+      <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+          <div class="content-header">
+            <a class="logo" href="/">
+              <img src="/public/assets/img/logo-edspert.png" width="150" height="30" alt="Inc Logo" />
+            </a>
+
+            <!-- Navbar -->
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li><a class="nav-link" href="/">Home</a></li>
+
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                    Products
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu" class="left-content-dropdown">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="">
+                          <img src="/public/assets/icons/book.svg" class="icon" />
+
+                          <div class="dropdown-content-nav">
+                            <div class="text-support-dropdown">
+                              <span class="dropdown-link-title">Blog</span>
+                              <p>The latest industry news, updates and info.</p>
+                            </div>
+
+                            <!-- <div class="action-dropdown-nav">
+                              <a href="">
+                                <button>Learn More</button>
+                              </a>
+                              
+                            </div> -->
+                          </div>
+                        </a>
+                      </li>
+
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="">
+                          <img src="/public/assets/icons/zap.svg" class="icon" />
+
+                          <div class="dropdown-content-nav">
+                            <div class="text-support-dropdown">
+                              <span class="dropdown-link-title">Customer stories</span>
+                              <p>Learn how our customers are making big changes.</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="">
+                          <img src="/public/assets/icons/play-circle.svg" class="icon" />
+
+                          <div class="dropdown-content-nav">
+                            <div class="text-support-dropdown">
+                              <span class="dropdown-link-title">Video tutorials</span>
+                              <p>Get up and running on new features and techniques.</p>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul role="menu" class="right-content-dropdown">
+                      <div class="content-menu-item">
+                        <div class="nav-menu-item-card">
+                          <img src="/public/assets/img/Image-dropdown.png" alt="" />
+                        </div>
+                      </div>
+
+                      <li class="dropdown-title">
+                        <div class="text-and-support-title">
+                          <h3 class="dropdown-link-title">We've just released an update!</h3>
+                          <p>Check out the all new dashboard view. Pages now load faster.</p>
+                        </div>
+                        <div class="action-title">
+                          <a href="" class="dismiss">Dismiss</a>
+                          <a href="" class="changelog">Changelog</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                    Resources
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu" class="left-content-dropdown">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="">
+                          <img src="/assets/icons/book.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Blog</span>
+                            <p>The latest industry news, updates and info.</p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="">
+                          <img src="assets/icons/zap.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Customer stories</span>
+                            <p>Learn how our customers are making big changes.</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="">
+                          <img src="assets/icons/play-circle.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Video tutorials</span>
+                            <p>Get up and running on new features and techniques.</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul role="menu" class="right-content-dropdown">
+                      <div class="content-menu-item">
+                        <div class="nav-menu-item-card">
+                          <img src="/assets/images/Image.png" alt="" />
+                        </div>
+                      </div>
+
+                      <li class="dropdown-title">
+                        <div class="text-and-support-title">
+                          <h3 class="dropdown-link-title">We've just released an update!</h3>
+                          <p>Check out the all new dashboard view. Pages now load faster.</p>
+                        </div>
+                        <div class="action-title">
+                          <a href="" class="dismiss">Dismiss</a>
+                          <a href="" class="changelog">Changelog</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li><a class="nav-link" href="/"> Pricing </a></li>
+              </ul>
+            </nav>
+            <!-- Close Navbar -->
+          </div>
+
+          <div class="nav-end">
+            <div class="navigation-action">
+              <button class="btn btn-login">Login</button>
+              <button class="btn btn-signup">Sign Up</button>
+            </div>
+
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- End Section Detals Header dan Nav -->
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+      <div class="container-hero">
+        <div class="content-hero">
+          <div class="heading-support-text">
+            <div class="heading-badge">
+              <img src="/public/assets/icons/Badge-catalog.svg" alt="" />
+              <h1 class="heading">Upskill Your Talent!</h1>
+            </div>
+            <p class="supporting-text">Kembangkan potensimu bersama Edspert</p>
+          </div>
+          <div class="input-field">
+            <div class="base-field">
+              <div class="input-wrap">
+                <div class="content">
+                  <img src="/public/assets/icons/search.svg" alt="" />
+                  <input type="text" placeholder="Search" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="image-patern">
+        <img src="/assets/images/Background pattern.png" alt="" />
+      </div> -->
+    </section>
+    <!-- End Hero Banner Section -->
+
+    <!-- Section Product Card -->
+    <section class="section-product-card">
+      <!-- Conteinr Product Card 1-->
+      <div class="container-product-card">
+        <div class="content-product-list">
+          <div class="card-list">
+            <img src="/public/assets/img/image-catalogue.png" alt="" />
+          </div>
+
+          <div class="header-card-list">
+            <div class="heading-text-card-list">
+              <h1>Web Development Bootacamp</h1>
+              <p>Batch 12</p>
+            </div>
+          </div>
+
+          <div class="content-card-list">
+            <div class="check-item">
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Certified Mentor</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+
+                <div class="text-wrap">Integrated Module</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Online Class</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Active Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card-list">
+            <s>Rp. 1.499.000</s>
+            <h1>Rp 899.000</h1>
+          </div>
+
+          <div class="footer-card-list">
+            <div class="action-btn-footer-card">
+              <div class="btn-action">
+                <button>
+                  <a href="">Daftar Sekarang</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-product-list">
+          <div class="card-list">
+            <img src="/public/assets/img/image-catalogue.png" alt="" />
+          </div>
+
+          <div class="header-card-list">
+            <div class="heading-text-card-list">
+              <h1>Web Development Bootacamp</h1>
+              <p>Batch 12</p>
+            </div>
+          </div>
+
+          <div class="content-card-list">
+            <div class="check-item">
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Certified Mentor</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Integrated Module</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Online Class</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Active Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card-list">
+            <s>Rp. 1.499.000</s>
+            <h1>Rp 899.000</h1>
+          </div>
+
+          <div class="footer-card-list">
+            <div class="action-btn-footer-card">
+              <div class="btn-action">
+                <button>
+                  <a href="">Daftar Sekarang</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-product-list">
+          <div class="card-list">
+            <img src="/public/assets/img/image-catalogue.png" alt="" />
+          </div>
+
+          <div class="header-card-list">
+            <div class="heading-text-card-list">
+              <h1>Web Development Bootacamp</h1>
+              <p>Batch 12</p>
+            </div>
+          </div>
+
+          <div class="content-card-list">
+            <div class="check-item">
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Certified Mentor</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Integrated Module</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Online Class</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Active Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card-list">
+            <s>Rp. 1.499.000</s>
+            <h1>Rp 899.000</h1>
+          </div>
+
+          <div class="footer-card-list">
+            <div class="action-btn-footer-card">
+              <div class="btn-action">
+                <button>
+                  <a href="">Daftar Sekarang</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conteinr Product Card 2-->
+
+      <div class="container-product-card">
+        <div class="content-product-list">
+          <div class="card-list">
+            <img src="/public/assets/img/image-catalogue.png" alt="" />
+          </div>
+
+          <div class="header-card-list">
+            <div class="heading-text-card-list">
+              <h1>Web Development Bootacamp</h1>
+              <p>Batch 12</p>
+            </div>
+          </div>
+
+          <div class="content-card-list">
+            <div class="check-item">
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Certified Mentor</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Integrated Module</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Online Class</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Active Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card-list">
+            <s>Rp. 1.499.000</s>
+            <h1>Rp 899.000</h1>
+          </div>
+
+          <div class="footer-card-list">
+            <div class="action-btn-footer-card">
+              <div class="btn-action">
+                <button>
+                  <a href="">Daftar Sekarang</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-product-list">
+          <div class="card-list">
+            <img src="/public/assets/img/image-catalogue.png" alt="" />
+          </div>
+
+          <div class="header-card-list">
+            <div class="heading-text-card-list">
+              <h1>Web Development Bootacamp</h1>
+              <p>Batch 12</p>
+            </div>
+          </div>
+
+          <div class="content-card-list">
+            <div class="check-item">
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Certified Mentor</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Integrated Module</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Online Class</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Active Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card-list">
+            <s>Rp. 1.499.000</s>
+            <h1>Rp 899.000</h1>
+          </div>
+
+          <div class="footer-card-list">
+            <div class="action-btn-footer-card">
+              <div class="btn-action">
+                <button>
+                  <a href="">Daftar Sekarang</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-product-list">
+          <div class="card-list">
+            <img src="/public/assets/img/image-catalogue.png" alt="" />
+          </div>
+
+          <div class="header-card-list">
+            <div class="heading-text-card-list">
+              <h1>Web Development Bootacamp</h1>
+              <p>Batch 12</p>
+            </div>
+          </div>
+
+          <div class="content-card-list">
+            <div class="check-item">
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Certified Mentor</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Integrated Module</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Online Class</div>
+              </div>
+
+              <div class="check-item-text">
+                <img src="/public/assets/icons/Check-icon.svg" alt="" />
+                <div class="text-wrap">Active Community</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-card-list">
+            <s>Rp. 1.499.000</s>
+            <h1>Rp 899.000</h1>
+          </div>
+
+          <div class="footer-card-list">
+            <div class="action-btn-footer-card">
+              <div class="btn-action">
+                <button>
+                  <a href="">Daftar Sekarang</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Product Card -->
+
+    <!-- Section Footer -->
+
+    <section class="footer">
+      <div class="container-body-footer">
+        <div class="content-body-footer">
+          <div class="footer-links-column">
+            <h1>Product</h1>
+            <div class="footer-links">
+              <a href=""><button>Overview</button></a>
+              <a href=""><button>Features</button></a>
+
+              <div class="base">
+                <a href=""><button>Solutions</button></a>
+                <img src="/public/assets/icons/Badge.svg" alt="" />
+              </div>
+
+              <a href=""><button>Tutorials</button></a>
+              <a href=""><button>Pricing</button></a>
+              <a href=""><button>Releases</button></a>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h1>Company</h1>
+            <div class="footer-links">
+              <a href=""><button>About us</button></a>
+              <a href=""><button>Careers</button></a>
+              <a href=""><button>Press</button></a>
+              <a href=""><button>News</button></a>
+              <a href=""><button>Media kit</button></a>
+              <a href=""><button>Contact</button></a>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h1>Resources</h1>
+            <div class="footer-links">
+              <a href=""><button>Blog</button></a>
+              <a href=""><button>Newsletter</button></a>
+              <a href=""><button>Newsletter</button></a>
+              <a href=""><button>Help centre</button></a>
+              <a href=""><button>Tutorials</button></a>
+              <a href=""><button>Support</button></a>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h1>Use cases</h1>
+            <div class="footer-links">
+              <a href=""><button>Startups</button></a>
+              <a href=""><button>Enterprise</button></a>
+              <a href=""><button>Government</button></a>
+              <a href=""><button>SaaS</button></a>
+              <a href=""><button>Marketplaces</button></a>
+              <a href=""><button>Ecommerce</button></a>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h1>Social</h1>
+            <div class="footer-links">
+              <a href=""><button>Twitter</button></a>
+              <a href=""><button>LinkedIn</button></a>
+              <a href=""><button>Facebook</button></a>
+              <a href=""><button>GitHub</button></a>
+              <a href=""><button>AngelList</button></a>
+              <a href=""><button>Dribbble</button></a>
+            </div>
+          </div>
+
+          <div class="footer-links-column">
+            <h1>Legal</h1>
+            <div class="footer-links">
+              <a href=""><button>Terms</button></a>
+              <a href=""><button>Privacy</button></a>
+              <a href=""><button>Cookies</button></a>
+              <a href=""><button>Licenses</button></a>
+              <a href=""><button>Settings</button></a>
+              <a href=""><button>Contact</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-subbody-footer">
+        <div class="content-sub-body-footer">
+          <img src="/public/assets/img/logo-edspert.png" alt="" />
+          <p>© 2077 Untitled UI. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Section Footer -->
+  </body>
+
+  <script src="/public/script.js"></script>
+</html>

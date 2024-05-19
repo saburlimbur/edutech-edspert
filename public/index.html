@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <title>Edutech</title>
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Section Detals Header dan Nav -->
+    <section class="details-section">
+      <header id="nav-menu" aria-label="navigation bar">
+        <div class="container">
+          <div class="content-header">
+            <a class="logo" href="/">
+              <img src="assets/img/logo-edspert.png" width="150" height="30" alt="Inc Logo" />
+            </a>
+
+            <!-- Navbar -->
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li><a class="nav-link" href="">Home</a></li>
+
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                    Products
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu" class="left-content-dropdown">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="./catalogue/catalogue.html" target="_blank">
+                          <img src="./assets/icons/book.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Blog</span>
+                            <p>The latest industry news, updates and info.</p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="./catalogue/catalogue.html" target="_blank">
+                          <img src="assets/icons/zap.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Customer stories</span>
+                            <p>Learn how our customers are making big changes.</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="./catalogue/catalogue.html" target="_blank">
+                          <img src="assets/icons/play-circle.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Video tutorials</span>
+                            <p>Get up and running on new features and techniques.</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul role="menu" class="right-content-dropdown">
+                      <div class="content-menu-item">
+                        <div class="nav-menu-item-card">
+                          <img src="assets/img/Image-dropdown.png" alt="" />
+                        </div>
+                      </div>
+
+                      <li class="dropdown-title">
+                        <div class="text-and-support-title">
+                          <h3 class="dropdown-link-title">We've just released an update!</h3>
+                          <p>Check out the all new dashboard view. Pages now load faster.</p>
+                        </div>
+                        <div class="action-title">
+                          <a href="" class="dismiss">Dismiss</a>
+                          <a href="" class="changelog">Changelog</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+                    Resources
+                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                  </button>
+
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu" class="left-content-dropdown">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="/catalogue/catalogue.html" target="_blank">
+                          <img src="./assets/icons/book.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Blog</span>
+                            <p>The latest industry news, updates and info.</p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="/catalogue/catalogue.html" target="_blank">
+                          <img src="assets/icons/zap.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Customer stories</span>
+                            <p>Learn how our customers are making big changes.</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="/catalogue/catalogue.html" target="_blank">
+                          <img src="assets/icons/play-circle.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Video tutorials</span>
+                            <p>Get up and running on new features and techniques.</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <ul role="menu" class="right-content-dropdown">
+                      <div class="content-menu-item">
+                        <div class="nav-menu-item-card">
+                          <img src="assets/images/Image.png" alt="" />
+                        </div>
+                      </div>
+
+                      <li class="dropdown-title">
+                        <div class="text-and-support-title">
+                          <h3 class="dropdown-link-title">We've just released an update!</h3>
+                          <p>Check out the all new dashboard view. Pages now load faster.</p>
+                        </div>
+                        <div class="action-title">
+                          <a href="" class="dismiss">Dismiss</a>
+                          <a href="" class="changelog">Changelog</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li><a class="nav-link" href="./catalogue/catalogue.html"> Pricing </a></li>
+              </ul>
+            </nav>
+            <!-- Close Navbar -->
+          </div>
+
+          <div class="nav-end">
+            <div class="navigation-action">
+              <button class="btn btn-login">Login</button>
+              <button class="btn btn-signup">Sign Up</button>
+            </div>
+
+            <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+              <i class="bx bx-menu" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- End Section Detals Header dan Nav -->
+
+    <!-- Metrics Section -->
+    <section class="metrics">
+      <div class="container-metrics">
+        <img src="assets/img/metrics-section.png" alt="" class="image-metrics" />
+        <div class="content-metrics">
+          <div class="heading-and-text">
+            <div class="heading-and-subheading">
+              <p class="title">Intensive Bootcamp</p>
+              <h1 class="heading-content">
+                Web Development <br class="break" />
+                Bootcamp
+              </h1>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <div class="row-item">
+              <div class="metric-item">
+                <h1>400+</h1>
+                <p>Portfolio Siswa</p>
+              </div>
+              <div class="metric-item">
+                <h1>80%</h1>
+                <p>Alumnin diterima kerja</p>
+              </div>
+            </div>
+            <div class="row-item">
+              <div class="metric-item">
+                <h1>10k</h1>
+                <p>Anggota Komunitas</p>
+              </div>
+              <div class="metric-item">
+                <h1>2000+</h1>
+                <p>Testimoni</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Metrics Section -->
+
+    <!-- Divider Section -->
+    <section class="divider">
+      <div class="container-divider">
+        <hr />
+      </div>
+    </section>
+    <!-- End Divider Section -->
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container-team-heading">
+        <div class="content-team-heading">
+          <div class="heading-text">
+            <div class="head-and-sub">
+              <h1>Mentor</h1>
+              <p>Dipandu oleh Mentor Terbaik Kami</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team 1 -->
+        <div class="container-team-member">
+          <div class="content-team-member">
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_1.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Agnes Amanta</h2>
+                      <p class="role-title">Founder & CEO</p>
+                    </div>
+                    <p>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_2.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Kajen Permadi</h2>
+                      <p class="role-title">Engineering Manager</p>
+                    </div>
+                    <p>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_3.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Natsir Naradi</h2>
+                      <p class="role-title">Product Manager</p>
+                    </div>
+                    <p>Former PM for Linear, Lambda School, and On Deck.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="/public/assets/img/Avatar_4.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Rahimah Gilda</h2>
+                      <p class="role-title">Frontend Developer</p>
+                    </div>
+                    <p>Former frontend dev for Linear, Coinbase, and Postscript.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team 2-->
+        <div class="container-team-member">
+          <div class="content-team-member">
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_5.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Suartini Novi</h2>
+                      <p class="role-title">Backend Developer</p>
+                    </div>
+                    <p>Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_6.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Hannah Airlangga</h2>
+                      <p class="role-title">Product Designer</p>
+                    </div>
+                    <p>Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_7.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Firman Kurniawan</h2>
+                      <p class="role-title">UX Researcher</p>
+                    </div>
+                    <p>Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-member-wrap">
+              <div class="team-member">
+                <img src="assets/img/Avatar_8.png" alt="" class="avatar" />
+                <div class="text-social">
+                  <div class="name-supporting-text">
+                    <div class="name-role">
+                      <h2 class="role">Mario Agustinus</h2>
+                      <p class="role-title">Customer Success</p>
+                    </div>
+                    <p>Lead CX at Wealthsimple. Former PagerDuty and Sqreen.</p>
+                  </div>
+                  <div class="social-icon">
+                    <img src="assets/icons/twitter-icon.png" alt="" />
+                    <img src="assets/icons/linkedin-icon.png" alt="" />
+                    <img src="assets/icons/dribble-icon.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    <!-- Features Section 1 -->
+    <section class="features-section">
+      <div class="container-features">
+        <div class="content-features">
+          <div class="head-and-sub">
+            <h1 class="heading-features">Fasilitas</h1>
+            <p class="title-features">Pengalaman Bootcamp Terbaik untuk Kamu!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-card">
+        <div class="content-card1">
+          <div class="feature-text">
+            <img src="/public/assets/icons/Users.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Komunitas</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/Heart.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">1-on-1 Session</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/trending-up.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Active Learning</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card2">
+          <div class="feature-text">
+            <img src="/public/assets/icons/Smile.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Happy Atmosphere</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/Flag.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Tugas</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/zap.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Intensive Bootcamp</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Emd Features Section 1 -->
+
+    <!-- Features Section 2 -->
+    <section class="features-section">
+      <div class="container-features">
+        <div class="content-features">
+          <div class="head-and-sub">
+            <h1 class="heading-features">Fasilitas</h1>
+            <p class="title-features">Pengalaman Bootcamp Terbaik untuk Kamu!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-card">
+        <div class="content-card1">
+          <div class="feature-text">
+            <img src="/public/assets/icons/Users.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Komunitas</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/Heart.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">1-on-1 Session</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/trending-up.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Active Learning</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card2">
+          <div class="feature-text">
+            <img src="/public/assets/icons/Smile.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Happy Atmosphere</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/Flag.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Tugas</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+
+          <div class="feature-text">
+            <img src="/public/assets/icons/zap.svg" alt="" />
+            <div class="text-and-support">
+              <h2 class="heading-text">Intensive Bootcamp</h2>
+              <p class="title-text">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Emd Features Section 2 -->
+
+    <!-- Careers Section -->
+    <section class="careers-section">
+      <div class="container-careers">
+        <div class="content-careers">
+          <h1 class="head-content">Materi</h1>
+
+          <div class="items-careers">
+            <div class="post-items-careers">
+              <div class="content-items">
+                <div class="text-and-support-careers">
+                  <h2>Introduction to Web Development</h2>
+                  <p>Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-careers">
+            <div class="post-items-careers">
+              <div class="content-items">
+                <div class="text-and-support-careers">
+                  <h2>Introduction to Web Development</h2>
+                  <p>Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-careers">
+            <div class="post-items-careers">
+              <div class="content-items">
+                <div class="text-and-support-careers">
+                  <h2>Introduction to Web Development</h2>
+                  <p>Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-careers">
+            <div class="post-items-careers">
+              <div class="content-items">
+                <div class="text-and-support-careers">
+                  <h2>Introduction to Web Development</h2>
+                  <p>Belajar logika dan hal hal dasar untuk menyipkan kamu belajar pengembangan web</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Careers Section-->
+
+    <!-- Footer Section-->
+    <section class="footer">
+      <div class="container-heading-footer">
+        <div class="content-heading-footer">
+          <div class="heading-text-footer">
+            <h1>Daftar Kelas Sekarang</h1>
+            <p>Join over 10,000+ students already growing with Edspert</p>
+          </div>
+
+          <div class="action-btn-footer">
+            <a href="">
+              <button class="btn-cs">Hubungi CS</button>
+            </a>
+
+            <a href="">
+              <button class="daftar">Daftar Sekarang</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-body-footer">
+        <div class="content-body-footer">
+          <div class="logo-and-text">
+            <img src="/public/assets/img/logo-edspert.png" alt="" class="logo-footer" />
+            <p>Design amazing digital experiences that create more happy in the world.</p>
+          </div>
+
+          <div class="content-links-footer">
+            <div class="footer-links-column">
+              <h1>Product</h1>
+              <div class="footer-links">
+                <a href=""><button>Overview</button></a>
+                <a href=""><button>Features</button></a>
+
+                <div class="base">
+                  <a href=""><button>Solutions</button></a>
+                  <img src="assets/icons/Badge.svg" alt="" />
+                </div>
+
+                <a href=""><button>Tutorials</button></a>
+                <a href=""><button>Pricing</button></a>
+                <a href=""><button>Releases</button></a>
+              </div>
+            </div>
+
+            <div class="footer-links-column">
+              <h1>Company</h1>
+              <div class="footer-links">
+                <a href=""><button>About us</button></a>
+                <a href=""><button>Careers</button></a>
+                <a href=""><button>Press</button></a>
+                <a href=""><button>News</button></a>
+                <a href=""><button>Media kit</button></a>
+                <a href=""><button>Contact</button></a>
+              </div>
+            </div>
+
+            <div class="footer-links-column">
+              <h1>Resources</h1>
+              <div class="footer-links">
+                <a href=""><button>Blog</button></a>
+                <a href=""><button>Newsletter</button></a>
+                <a href=""><button>Newsletter</button></a>
+                <a href=""><button>Help centre</button></a>
+                <a href=""><button>Tutorials</button></a>
+                <a href=""><button>Support</button></a>
+              </div>
+            </div>
+
+            <div class="footer-links-column">
+              <h1>Social</h1>
+              <div class="footer-links">
+                <a href=""><button>Twitter</button></a>
+                <a href=""><button>LinkedIn</button></a>
+                <a href=""><button>Facebook</button></a>
+                <a href=""><button>GitHub</button></a>
+                <a href=""><button>AngelList</button></a>
+                <a href=""><button>Dribbble</button></a>
+              </div>
+            </div>
+
+            <div class="footer-links-column">
+              <h1>Legal</h1>
+              <div class="footer-links">
+                <a href=""><button>Terms</button></a>
+                <a href=""><button>Privacy</button></a>
+                <a href=""><button>Cookies</button></a>
+                <a href=""><button>Licenses</button></a>
+                <a href=""><button>Settings</button></a>
+                <a href=""><button>Contact</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-footer">
+        <div class="content-footer-text">
+          <h1>© 2024 Untitled UI. All rights reserved.</h1>
+          <div class="social-icons-footer">
+            <img src="assets/icons/twitter.svg" alt="" />
+            <img src="assets/icons/linkedin.svg" alt="" />
+            <img src="assets/icons/Facebook.svg" alt="" />
+            <img src="assets/icons/Github.svg" alt="" />
+            <img src="assets/icons/Peace.svg" alt="" />
+            <img src="assets/icons/dribble.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
